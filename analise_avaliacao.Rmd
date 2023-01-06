@@ -1,0 +1,133 @@
+---
+title: "Relatório - Avaliação Diagnóstica"
+author: ""
+output:
+  pdf_document: 
+      keep_tex: true
+classoption: landscape
+editor_options:
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+# bibliotecas
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(corrplot)
+library(knitr)
+
+# importacao dados
+db <- readxl::read_excel(
+  path = "avaliacao basal codificado.xlsx", 
+  sheet = 1
+)
+
+# organizacao dos dados
+db <- db |> 
+  filter(nchar(matricula) > 1) |> 
+  mutate(
+    questao = factor(questao, levels = as.numeric(unique(db$questao))),
+    criterio1 = as.numeric(as.character(criterio1)),
+    criterio2 = as.numeric(as.character(criterio2)),
+    criterio3 = as.numeric(as.character(criterio3)),
+    matricula = as.factor(matricula)
+  )
+```
+
+
+# Resultados.
+
+```{r,echo=FALSE,fig.align='center',fig.width=8,fig.height=4}
+# nota da prova escrita
+tmp <- db |> 
+  mutate(perc_item = rowMeans(cbind.data.frame(db$criterio1, db$criterio2, db$criterio3))) |> 
+  select(-c(nome, criterio1:criterio3)) |> 
+  group_by(matricula, questao) |> 
+  pivot_wider(names_from = questao, values_from = perc_item) |> 
+  ungroup()
+
+tmp |> 
+  mutate(
+    aproveitamento = round(rowMeans(tmp[, -c(1, 2)], na.rm = T), 2),
+    `1` = round(`1`, 2),
+    `2` = round(`2`, 2),
+    `3` = round(`3`, 2),
+    `4` = round(`4`, 2),
+    `5` = round(`5`, 2),
+    `6` = round(`6`, 2),
+    `7` = round(`7`, 2),
+    `8` = round(`8`, 2),
+    `9` = round(`9`, 2),
+    `10` = round(`10`, 2),
+    `11` = round(`11`, 2),
+    `12` = round(`12`, 2)
+  ) |> 
+  kable(align = 'c', caption = 'Aproveitamento das notas entre [0,1].')
+
+# desempenho da turma por questao
+tmp |> 
+  select(matricula, `1`:`12`) |> 
+  pivot_longer(-matricula, names_to = 'questao', values_to = 'perc_item') |> 
+  group_by(questao) |> 
+  summarise(
+    media = mean(perc_item),
+    desvp = sd(perc_item),
+    coefv = desvp / media
+  ) |> 
+  suppressMessages() |> 
+  mutate(questao = as.numeric(as.character(questao))) |> 
+  arrange(questao) |> 
+  kable(align = 'c', caption = 'Aproveitamento da turma por questão.')
+
+# desempenho da turma pode criterio de correcao
+db |> 
+  mutate(perc_item = rowMeans(cbind.data.frame(db$criterio1, db$criterio2, db$criterio3))) |> 
+  select(-c(nome, questao, tipo)) |> 
+  pivot_longer(-matricula, names_to = 'criterio', values_to = 'percentuais') |> 
+  group_by(criterio) |> 
+  summarise(
+    media = mean(percentuais),
+    desvp = sd(percentuais),
+    coefv = desvp / media
+  ) |> 
+  kable(align = 'c', caption = 'Aproveitamento da turma por critério de correção.')
+```
+
+
+# Correlações
+
+```{r,echo=FALSE,fig.align='center',fig.width=8,fig.height=8}
+tmp2 <- tmp |> 
+  select(`1`:`12`) |> 
+  as.matrix()
+rownames(tmp2) <- tmp$matricula
+
+M <- tmp2 |> 
+  cor() 
+corrplot(
+  corr = M, 
+  p.mat = M, 
+  sig.level = 0.05,
+  insig = 'label_sig',
+  method = 'number',
+  diag = F,
+  type = 'upper'
+)
+```
+
+
+# Análise de cluster
+
+```{r,echo=FALSE,fig.align='center',fig.width=14,fig.height=8}
+hc <- tmp2 |> 
+  t() |> 
+  dist() |> 
+  hclust()
+plot(hc, main = 'Dendrograma: Alunos')
+rect.hclust(hc, k = 5, border = "red")
+hc2 <- tmp2 |> 
+  dist() |> 
+  hclust()
+plot(hc2, main = 'Dendrograma: Questões')
+rect.hclust(hc2, k = 4, border = "red")
+```
