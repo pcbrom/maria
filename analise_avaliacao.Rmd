@@ -123,11 +123,11 @@ hc <- tmp2 |>
   t() |> 
   dist() |> 
   hclust()
-plot(hc, main = 'Dendrograma: Alunos')
+plot(hc, main = 'Dendrograma: Questões')
 rect.hclust(hc, k = 5, border = "red")
 hc2 <- tmp2 |> 
   dist() |> 
   hclust()
-plot(hc2, main = 'Dendrograma: Questões')
+plot(hc2, main = 'Dendrograma: Alunos')
 rect.hclust(hc2, k = 4, border = "red")
 ```
