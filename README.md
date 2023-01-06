@@ -12,3 +12,7 @@ Trata-se do programa referenciado e utilizado na pesquisa.
 3. ```analise_avaliacao.pdf```: Relatório em pdf para leitura e interpretação.
 4. ```analise_avaliacao.tex```: Arquivo contendo as tabelas em LaTeX para facilitar o uso em alguma publicação.
 5. ```analise_avaliacao_files/figure-latex```: Pasta contendo as imagens geradas no relatório.
+
+# Contribuições e desenvolvimento
+
+Caso se interesse em ajudar no projeto, entre em contato ```1521729@ifb.edu.br```.
