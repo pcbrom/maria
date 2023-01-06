@@ -15,4 +15,4 @@ Trata-se do programa referenciado e utilizado na pesquisa.
 
 # Contribuições e desenvolvimento
 
-Caso se interesse em ajudar no projeto, entre em contato ```1521729@ifb.edu.br```.
+Caso se interesse em contribuir com o projeto, entre em contato ```1521729@ifb.edu.br```. ```1957380@ifb.edu.br```, ```juliana.costa8191@gmail.com```.
