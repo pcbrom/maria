@@ -1,7 +1,14 @@
 # Método de Análise, Relatório e Indicadores na Avaliação (M.A.R.I.A.)
 
-Repositório referente ao Trabalho de Conclusão de Curso (Juliana Costa do Nascimento).
-Título do trabalho: Uso da análise de cluster em avaliação diagnóstica para mapeamento de defasagem escolar.
+Título do trabalho: 
+- Uso da análise de cluster em avaliação diagnóstica para mapeamento de defasagem escolar.
+
+Autora: 
+- Juliana Costa do Nascimento <a href="" target="_blank">(Lattes)</a>.
+
+Orientadores: 
+- Pedro Carvalho Brom <a href="http://lattes.cnpq.br/0154064396756002" target="_blank">(Lattes)</a>
+- Bruno Marx de Aquino Braga <a href="http://lattes.cnpq.br/6926608312251267" target="_blank">(Lattes)</a>
 
 Trata-se do programa referenciado e utilizado na pesquisa.
 
@@ -15,4 +22,4 @@ Trata-se do programa referenciado e utilizado na pesquisa.
 
 # Contribuições e desenvolvimento
 
-Caso se interesse em contribuir com o projeto, entre em contato ```1521729@ifb.edu.br```. ```1957380@ifb.edu.br```, ```juliana.costa8191@gmail.com```.
+Caso tenha dúvidas e/ou se interesse em contribuir com o projeto, entre em contato: Pedro Carvalho Brom (desenvolvimento do programa) ```1521729@ifb.edu.br```. Bruno Marx de Aquino Braga ```1957380@ifb.edu.br```, Juliana Costa do Nascimento ```juliana.costa8191@gmail.com```.
