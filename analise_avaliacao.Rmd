@@ -124,7 +124,7 @@ hc <- tmp2 |>
   dist() |> 
   hclust()
 plot(hc, main = 'Dendrograma: Questões')
-rect.hclust(hc, k = 5, border = "red")
+rect.hclust(hc, k = 4, border = "red")
 hc2 <- tmp2 |> 
   dist() |> 
   hclust()
