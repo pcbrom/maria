@@ -7,8 +7,8 @@ Autora:
 - Juliana Costa do Nascimento <a href="" target="_blank">(Lattes)</a>.
 
 Orientadores: 
-- Pedro Carvalho Brom <a href="http://lattes.cnpq.br/0154064396756002" target="_blank">(Lattes)</a>
-- Bruno Marx de Aquino Braga <a href="http://lattes.cnpq.br/6926608312251267" target="_blank">(Lattes)</a>
+- Pedro Carvalho Brom <a href="http://lattes.cnpq.br/0154064396756002" target="_blank">(Lattes)</a>.
+- Bruno Marx de Aquino Braga <a href="http://lattes.cnpq.br/6926608312251267" target="_blank">(Lattes)</a>.
 
 Trata-se do programa referenciado e utilizado na pesquisa.
 
