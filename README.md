@@ -4,7 +4,7 @@ Título do trabalho:
 - Uso da análise de cluster em avaliação diagnóstica para mapeamento de defasagem escolar.
 
 Autora: 
-- Juliana Costa do Nascimento <a href="" target="_blank">(Lattes)</a>.
+- Juliana Costa do Nascimento <a href="http://lattes.cnpq.br/0230719779410680" target="_blank">(Lattes)</a>.
 
 Orientadores: 
 - Pedro Carvalho Brom <a href="http://lattes.cnpq.br/0154064396756002" target="_blank">(Lattes)</a>.
