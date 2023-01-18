@@ -2,6 +2,7 @@
 
 Título do trabalho: 
 - Uso da análise de cluster em avaliação diagnóstica para mapeamento de defasagem escolar.
+- Aprovado em 17/01/2023.
 
 Autora: 
 - Juliana Costa do Nascimento <a href="http://lattes.cnpq.br/0230719779410680" target="_blank">(Lattes)</a>.
