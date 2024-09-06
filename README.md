@@ -1,5 +1,8 @@
 # Método de Análise, Relatório e Indicadores na Avaliação (M.A.R.I.A.)
 
+Publicado em: Perspectivas da Educação Matemática, v. 17, n. 46, p. 26, 20 jun. 2024. 
+- <a href="https://periodicos.ufms.br/index.php/pedmat/article/view/19730" target="_blank">Uso da Análise de Cluster em Avaliação Diagnóstica para Mapeamento de Defasagem Escolar</a>
+
 Título do trabalho: 
 - Uso da análise de cluster em avaliação diagnóstica para mapeamento de defasagem escolar.
 - Aprovado em 17/01/2023.
@@ -21,6 +24,19 @@ Trata-se do programa referenciado e utilizado na pesquisa.
 4. ```analise_avaliacao.tex```: Arquivo contendo as tabelas em LaTeX para facilitar o uso em alguma publicação.
 5. ```analise_avaliacao_files/figure-latex```: Pasta contendo as imagens geradas no relatório.
 
-# Contribuições e desenvolvimento
+## Como citar
 
-Caso tenha dúvidas e/ou se interesse em contribuir com o projeto, entre em contato: Pedro Carvalho Brom (desenvolvimento do programa) ```1521729@ifb.edu.br```. Bruno Marx de Aquino Braga ```1957380@ifb.edu.br```, Juliana Costa do Nascimento ```juliana.costa8191@gmail.com```.
+COSTA DO NASCIMENTO, J.; BROM, P. C.; BRAGA, B. M. DE A. Uso da Análise de Cluster em Avaliação Diagnóstica para Mapeamento de Defasagem Escolar. Perspectivas da Educação Matemática, v. 17, n. 46, p. 26, 20 jun. 2024. 
+
+```bibtex
+@article{costa2024uso,
+  title = {Uso da Análise de Cluster em Avaliação Diagnóstica para Mapeamento de Defasagem Escolar},
+  author = {Costa do Nascimento, J. and Brom, P. C. and Braga, B. M. de A.},
+  journal = {Perspectivas da Educação Matemática},
+  volume = {17},
+  number = {46},
+  pages = {26},
+  year = {2024},
+  month = {jun},
+  day = {20},
+}
