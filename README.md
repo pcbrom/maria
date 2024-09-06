@@ -1,7 +1,7 @@
 # Método de Análise, Relatório e Indicadores na Avaliação (M.A.R.I.A.)
 
 Publicado em: Perspectivas da Educação Matemática, v. 17, n. 46, p. 26, 20 jun. 2024. 
-- <a href="https://periodicos.ufms.br/index.php/pedmat/article/view/19730" target="_blank">Uso da Análise de Cluster em Avaliação Diagnóstica para Mapeamento de Defasagem Escolar</a>
+- <a href="https://periodicos.ufms.br/index.php/pedmat/article/view/18155" target="_blank">Uso da Análise de Cluster em Avaliação Diagnóstica para Mapeamento de Defasagem Escolar</a>
 
 Título do trabalho: 
 - Uso da análise de cluster em avaliação diagnóstica para mapeamento de defasagem escolar.
